@@ -1,0 +1,120 @@
+{
+  "kb_path": "data/raw/metaqa/kb.tsv",
+  "query_path": "data/processed/parsed/metaqa3hop_parsed.jsonl",
+  "partition_method": "community",
+  "num_owners": 5,
+  "partition_seed": 2,
+  "methods": [
+    "single_broker",
+    "broadcast_all",
+    "oracle_semijoin",
+    "random_gossip",
+    "star_coordinator",
+    "single_union",
+    {
+      "name": "decent",
+      "label": "decent_hash_B4",
+      "params": {
+        "certificate_mode": "hash",
+        "challenge_rate": 0.1,
+        "budget": 4
+      }
+    },
+    {
+      "name": "decent",
+      "label": "decent_hash_B12",
+      "params": {
+        "certificate_mode": "hash",
+        "challenge_rate": 0.1,
+        "budget": 12
+      }
+    },
+    {
+      "name": "decent",
+      "label": "decent_hash_B20",
+      "params": {
+        "certificate_mode": "hash",
+        "challenge_rate": 0.1,
+        "budget": 20
+      }
+    },
+    {
+      "name": "decent",
+      "label": "decent_hash_B40",
+      "params": {
+        "certificate_mode": "hash",
+        "challenge_rate": 0.1,
+        "budget": 40
+      }
+    },
+    {
+      "name": "decent",
+      "label": "decent_hash_B80",
+      "params": {
+        "certificate_mode": "hash",
+        "challenge_rate": 0.1,
+        "budget": 80
+      }
+    },
+    {
+      "name": "decent",
+      "label": "decent_hash_B160",
+      "params": {
+        "certificate_mode": "hash",
+        "challenge_rate": 0.1,
+        "budget": 160
+      }
+    },
+    {
+      "name": "decent",
+      "label": "decent_hash_B320",
+      "params": {
+        "certificate_mode": "hash",
+        "challenge_rate": 0.1,
+        "budget": 320
+      }
+    },
+    {
+      "name": "decent",
+      "label": "decent_hash_B640",
+      "params": {
+        "certificate_mode": "hash",
+        "challenge_rate": 0.1,
+        "budget": 640
+      }
+    },
+    {
+      "name": "decent",
+      "label": "decent_hash_B1280",
+      "params": {
+        "certificate_mode": "hash",
+        "challenge_rate": 0.1,
+        "budget": 1280
+      }
+    },
+    {
+      "name": "decent",
+      "label": "decent_hash_B2560",
+      "params": {
+        "certificate_mode": "hash",
+        "challenge_rate": 0.1,
+        "budget": 2560
+      }
+    },
+    {
+      "name": "decent",
+      "label": "decent_hash_Binf",
+      "params": {
+        "certificate_mode": "hash",
+        "challenge_rate": 0.1
+      }
+    },
+    {
+      "name": "decent",
+      "label": "decent_raw_inf",
+      "params": {}
+    }
+  ],
+  "output_dir": "experiments/runs_llm/metaqa3hop_community_n5_s2",
+  "limit": 300
+}

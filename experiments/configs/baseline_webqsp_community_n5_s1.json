@@ -1,0 +1,16 @@
+{
+  "kb_path": "unused",
+  "query_path": "data/processed/rog_webqsp/webqsp_test.jsonl",
+  "partition_method": "community",
+  "num_owners": 5,
+  "partition_seed": 1,
+  "methods": [
+    "single_broker",
+    "splitrag_adapted",
+    "clause_adapted",
+    "asksafely_suppress",
+    "centralised_join"
+  ],
+  "output_dir": "experiments/runs_baselines/webqsp_community_n5_s1",
+  "limit": 300
+}

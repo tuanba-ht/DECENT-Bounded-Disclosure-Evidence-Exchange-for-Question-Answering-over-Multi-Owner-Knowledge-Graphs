@@ -1,0 +1,16 @@
+{
+  "kb_path": "unused",
+  "query_path": "data/processed/rog_webqsp/webqsp_test.jsonl",
+  "partition_method": "hash",
+  "num_owners": 5,
+  "partition_seed": 3,
+  "methods": [
+    "single_broker",
+    "splitrag_adapted",
+    "clause_adapted",
+    "asksafely_suppress",
+    "centralised_join"
+  ],
+  "output_dir": "experiments/runs_baselines/webqsp_hash_n5_s3",
+  "limit": 300
+}

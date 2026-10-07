@@ -1,0 +1,84 @@
+{
+  "kb_path": "unused",
+  "query_path": "data/processed/parsed/webqsp_parsed.jsonl",
+  "partition_method": "community",
+  "num_owners": 5,
+  "partition_seed": 3,
+  "methods": [
+    "single_broker",
+    "broadcast_all",
+    "oracle_semijoin",
+    "random_gossip",
+    "star_coordinator",
+    "single_union",
+    {
+      "name": "decent",
+      "label": "decent_hash_B2",
+      "params": {
+        "certificate_mode": "hash",
+        "challenge_rate": 0.1,
+        "budget": 2
+      }
+    },
+    {
+      "name": "decent",
+      "label": "decent_hash_B3",
+      "params": {
+        "certificate_mode": "hash",
+        "challenge_rate": 0.1,
+        "budget": 3
+      }
+    },
+    {
+      "name": "decent",
+      "label": "decent_hash_B4",
+      "params": {
+        "certificate_mode": "hash",
+        "challenge_rate": 0.1,
+        "budget": 4
+      }
+    },
+    {
+      "name": "decent",
+      "label": "decent_hash_B6",
+      "params": {
+        "certificate_mode": "hash",
+        "challenge_rate": 0.1,
+        "budget": 6
+      }
+    },
+    {
+      "name": "decent",
+      "label": "decent_hash_B8",
+      "params": {
+        "certificate_mode": "hash",
+        "challenge_rate": 0.1,
+        "budget": 8
+      }
+    },
+    {
+      "name": "decent",
+      "label": "decent_hash_B12",
+      "params": {
+        "certificate_mode": "hash",
+        "challenge_rate": 0.1,
+        "budget": 12
+      }
+    },
+    {
+      "name": "decent",
+      "label": "decent_hash_Binf",
+      "params": {
+        "certificate_mode": "hash",
+        "challenge_rate": 0.1
+      }
+    },
+    {
+      "name": "decent",
+      "label": "decent_raw_inf",
+      "params": {}
+    }
+  ],
+  "output_dir": "experiments/runs_llm/webqsp_community_n5_s3",
+  "limit": 300
+}

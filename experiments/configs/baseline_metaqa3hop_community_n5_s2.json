@@ -1,0 +1,16 @@
+{
+  "kb_path": "data/raw/metaqa/kb.tsv",
+  "query_path": "data/processed/metaqa/metaqa_3hop_qtype_300.jsonl",
+  "partition_method": "community",
+  "num_owners": 5,
+  "partition_seed": 2,
+  "methods": [
+    "single_broker",
+    "splitrag_adapted",
+    "clause_adapted",
+    "asksafely_suppress",
+    "centralised_join"
+  ],
+  "output_dir": "experiments/runs_baselines/metaqa3hop_community_n5_s2",
+  "limit": 300
+}
